@@ -21,8 +21,10 @@ import spies from 'chai-spies'
 chai.use(spies)
 
 const expect = chai.expect
+try {
 //单元测试
 {
+    //测试按钮含有 icon
     const Constructor = Vue.extend(Button)
     const vm = new Constructor({
        propsData:{
@@ -100,4 +102,11 @@ const expect = chai.expect
     let button = vm.$el
     button.click()
     expect(spy).to.have.been.called()
+}
+} catch (error){
+    window.errors = [error]
+} finally {
+   window.errors && window.errors.forEach((error) =>{
+       console.log(errors.message)
+   })
 }
