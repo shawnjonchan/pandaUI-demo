@@ -7130,10 +7130,10 @@ sha.js@^2.4.0, sha.js@^2.4.8:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-shawnjon-test-1@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.npm.taobao.org/shawnjon-test-1/download/shawnjon-test-1-0.0.1.tgz#7c41e16ed8179c331898500d3737b78289e83c6f"
-  integrity sha1-fEHhbtgXnDMYmFANNze3gonoPG8=
+shawnjon-test-1@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.npm.taobao.org/shawnjon-test-1/download/shawnjon-test-1-0.0.2.tgz?cache=0&sync_timestamp=1607094391374&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fshawnjon-test-1%2Fdownload%2Fshawnjon-test-1-0.0.2.tgz#0a491d0140795140a1ed44361957af978282aff7"
+  integrity sha1-CkkdAUB5UUCh7UQ2GVevl4KCr/c=
   dependencies:
     vue "^2.6.12"
     vue-hot-reload-api "^2.3.4"
