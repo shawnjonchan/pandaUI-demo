@@ -45,11 +45,11 @@
       computed: {
          colClass(){
             let {span,offset,ipad,narrowPc,pc,widePc} = this
-            let createClasses = this.createClasse         
+            let createClasses = this.createClasses         
             return [
                ...createClasses({span,offset}),
                ...createClasses(ipad,'ipad-'),
-               ...createClasses(narrowPc,'narrow-pc'),
+               ...createClasses(narrowPc,'narrow-pc-'),
                ...createClasses(pc,'pc-'),
                ...createClasses(widePc,'wide-pc-'),
             ]
