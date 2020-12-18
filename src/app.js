@@ -40,8 +40,17 @@ new Vue({
         message:'hi',
     },
     created(){
-       this.$toast('文字',{
-          enableHtml:false
+       this.$toast('此处可上可中可下',{
+          position: 'middle',
+          enableHtml: false,
+          closeButton: {
+            text: '哇哈哈哈',
+            callback(){
+                console.log('你好啊')
+            }
+          },
+          autoClose: false,
+          autoCloseDelay: 3
        })
     },
     methods:{
