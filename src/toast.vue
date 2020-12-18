@@ -17,12 +17,11 @@ export default {
     name:'PandaToast',
     props: {
         autoClose:{
-            type: Boolean,
-            default: true
-        },
-        autoCloseDelay: {
-            type: Number,
-            default: 50
+            type: [Boolean,Number],
+            default: 5,
+            validator(value){
+                return value === false || typeof value === 'number';
+            }
         },
         closeButton: {
             type: Object,
@@ -63,16 +62,13 @@ export default {
             if(this.autoClose){
                setTimeout(() =>{
                    this.close()
-               },this.autoCloseDelay *1000)
+               },this.autoClose *1000)
             }
         },
         close(){
             this.$el.remove()
             this.$emit('close')
             this.$destroy()
-        },
-        log(){
-            console.log('测试')
         },
         onClickClose(){
             this.close()
@@ -87,7 +83,7 @@ export default {
    $font-size: 14px;
    $toast-min-height: 40px;
    $toast-bg: rgba(0,0,0,0.75);
-   @keyframes  slide-in {
+   @keyframes  slide-up {
        0%{opacity: 0; transform:translateY(100%);}
        100%{opacity:1; transform: translateY(0%);}
    }
