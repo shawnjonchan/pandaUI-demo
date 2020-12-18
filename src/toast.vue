@@ -102,9 +102,8 @@ export default {
    .wrapper{
      position: fixed; 
      left: 50%;
-     transform:translateX(-50%);
-     $animation-duration:300ms;
-   }
+     transform: translateX(-50%);
+     $animation-duration: 300ms;
     &.position-top{
        top: 0;
        .toast {
@@ -127,6 +126,7 @@ export default {
          .toast {
             animation: fade-in $animation-duration;
          }
+        }
      }
    .toast {
      font-size: $font-size; line-height: 1.8; min-height: $toast-min-height; color: white; display: flex; align-items: center; background: $toast-bg; border-radius: 4px; box-shadow:0 0 3px 0 rgba(0,0,0,0.50); padding:0 16px;
