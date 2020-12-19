@@ -6,7 +6,11 @@
 
 <script>
 export default {
-   name: 'PandaTabsBody'
+   name: 'PandaTabsBody',
+   inject: ['eventBus'],
+   created(){
+       
+   }
 }
 </script>
 
