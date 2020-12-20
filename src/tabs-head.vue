@@ -1,7 +1,7 @@
 <template>
   <div class="tabs-head">
       <slot></slot>
-      <div class="lin" ref="line"></div>
+      <div class="line" ref="line"></div>
       <div class="actions-wrapper">
         <slot name="actions"></slot>
       </div>
