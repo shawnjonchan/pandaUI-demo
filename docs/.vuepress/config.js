@@ -3,9 +3,9 @@ module.exports = {
     description: '一个好用的UI框架',
     themeConfig: {
         nav: [
-            {text: '主页',lin: '/'},
-            {text: '文档',lin: '/guide'},
-            {text: '交流',lin: '/https://google.com'},
+            {text: '主页', link: '/'},
+            {text: '文档', link: '/guide/'},
+            {text: '交流', link: '/https://google.com'},
         ],
         sidebar: [
             {
