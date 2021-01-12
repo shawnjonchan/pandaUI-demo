@@ -1,11 +1,10 @@
 <template>
- <div>
+ <div class="button-wrapper">
    <g-button>默认按钮</g-button>    
-   <g-button icon="settings">默认按钮</g-button>    
+   <g-button icon="settings">默认按钮</g-button>
+   <g-button icon="settings" icon-position="right">默认按钮</g-button>
    <g-button :loading="true">默认按钮</g-button>    
    <g-button disabled>默认按钮</g-button>
-   
-   <pre><code>{{content}}</code></pre>    
  </div> 
 </template>
 
@@ -16,19 +15,11 @@ export default {
   components: {
       'g-button': Button
   },
-  data(){
-    return {
-      content: `
-       <g-button>默认按钮</g-button>
-       <g-button icon="settings">默认按钮</g-button>    
-       <g-button :loading="true">默认按钮</g-button>    
-       <g-button disabled>默认按钮</g-button>
-       `.replace(/\t+| +/g,'').trim()
-    }
-  }
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+  .button-wrapper{
+    padding: 0 10px;
+  }
 </style>
