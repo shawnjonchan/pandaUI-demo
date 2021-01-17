@@ -1,15 +1,22 @@
 <template>
-    <svg class="g-icon shawn">
-        <use :xlink:href="`#i-${name}`"></use>
+    <svg class="icon" aria-hidden="true" v-if="iconName">
+        <use :xlink:href=" `#i-${iconName}` "></use>
     </svg>
 </template>
+
 <script>
-  import './svg'
+  import './svg.js'
   export default {
-    name:"PandaIcon",
-    props:['name']
+    name: "PandaIcon",
+    props: ['iconName']
   }
 </script>
 <style lang="scss" scoped>
-      .g-icon {width:1em; height:1em;}    
+  .icon { 
+    width: 1em; 
+    height: 1em; 
+    vertical-align: middle; 
+    fill: currentColor; 
+    overflow: hidden; 
+  }    
 </style>

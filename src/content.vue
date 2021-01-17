@@ -1,17 +1,17 @@
 <template>
-  <div class="content">
-      <slot></slot>
+  <div class="content-wrapper">
+    <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-
+  name: 'PandaContent'
 }
 </script>
 
 <style lang="scss" scoped>
-   .content {
+   .content-wrapper {
       flex-grow: 1;
 
    }

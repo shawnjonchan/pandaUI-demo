@@ -1,5 +1,5 @@
 <template>
-  <div class="layout" :class="layoutClass">
+  <div class="layout-wrapper" :class="layoutClass">
       <slot></slot>
   </div>
 </template>
@@ -8,15 +8,15 @@
 export default {
    name: 'PandaLayout',
    data(){
-       return{
-           layoutClass: {
-               hasSider: false
-           }
-       }
+      return{
+        layoutClass: {
+            hasSider: false
+        }
+      }
    },
    mounted(){
       this.$children.forEach((vm) =>{
-          if (vm.$options.name ==='PandaSider'){
+          if (vm.$options.name === 'PandaSider'){
               this.layoutClass.hasSider = true
           }
       })
@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-   .layout {
+   .layout-wrapper {
       flex-grow: 1;
       display: flex;
       flex-direction: column;

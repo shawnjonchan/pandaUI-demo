@@ -1,13 +1,12 @@
 ---
-title: 快速上手
+title: '快速上手'
 ---
 # 快速上手
 
-
 ## 引入必要资源
 ```javascript
-import {Button} from "init-ui-demo";
-import "init-ui-demo/dist/index.css";
+import {Button} from "panda-ui-demo";
+import "panda-ui-demo/dist/index.css";
 ```
 
 ## 注册组件

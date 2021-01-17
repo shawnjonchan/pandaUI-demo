@@ -1,5 +1,5 @@
 <template>
-  <div class="tabs-body">
+  <div class="tabs-body-wrapper">
       <slot></slot>
   </div>
 </template>
@@ -8,14 +8,11 @@
 export default {
    name: 'PandaTabsBody',
    inject: ['eventBus'],
-   created(){
-       
-   }
 }
 </script>
 
 <style>
-  .tabs-body{
+  .tabs-body-wrapper{
 
   }
 </style>

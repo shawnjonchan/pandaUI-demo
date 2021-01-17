@@ -1,5 +1,5 @@
 <template>
-  <div class="tabs">
+  <div class="tabs-wrapper">
       <slot></slot>
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
        },
        direction: {
            type: String,
-           default:'horizontal',
+           default: 'horizontal',
            validator(value) {
               return ['horizontal','vertical'].indexOf(value) >=0
            }
@@ -35,7 +35,7 @@ export default {
       checkChildren(){
         if(this.$children.length === 0){
           console && console.warn && 
-          console.warn('tabs的子组件应该是tabs-head和tabs-pane，但你没有写子组件')
+          console.warn('tabs的子组件应该是tabs-item和tabs-pane，但你没有写子组件')
         }
       },
       selectTab(){
@@ -58,7 +58,7 @@ export default {
 </script>
 
 <style>
-  .tabs{
+  .tabs-wrapper{
 
   }
 </style>

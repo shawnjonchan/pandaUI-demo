@@ -1,6 +1,6 @@
 <template>
-  <div class="tabs-pane" :class="classes" v-if="active">
-      <slot></slot>
+  <div class="tabs-pane-wrapper" :class="classes" v-if="active">
+    <slot></slot>
   </div>
 </template>
 
@@ -9,9 +9,9 @@ export default {
    name: 'PandaTabsPane',
    inject: ['eventBus'],
    data(){
-       return {
-           active: false
-       }
+      return {
+        active: false
+      }
    },
    props: {
        name:{
@@ -21,9 +21,9 @@ export default {
    },
    computed:{
        classes(){
-           return{
-               active: this.active
-           }
+          return{
+            active: this.active
+          }
        }
    },
    created(){
@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  .tabs-pane{
+  .tabs-pane-wrapper{
     padding: 1em;
     &.active{
     }

@@ -1,7 +1,8 @@
 ---
-title: Button - 按钮
+title: 'Button - 按钮'
 ---
 # 按钮
+
 ## 预览
 &nbsp;
 <ClientOnly>
@@ -10,10 +11,11 @@ title: Button - 按钮
 
 ## 使用方法
 ```vue
-<i-button>默认按钮</i-button>
-<i-button icon="settings">默认按钮</i-button>
-<i-button icon="settings" icon-position="right">默认按钮</i-button>
-<i-button :loading="true">默认按钮</i-button>
+<i-button>默认按钮</i-button>    
+<i-button :loading="loading1" @click="loading1 = !loading1">默认按钮</i-button>
+<i-button icon="settings" :loading="loading2" @click="loading2 = !loading2">默认按钮</i-button>
+<i-button icon="settings" icon-position="right" :loading="loading3" @click="loading3 = !loading3">
+默认按钮</i-button>
 <i-button disabled>默认按钮</i-button>
 ```
 
@@ -36,8 +38,8 @@ title: Button - 按钮
 代码
 ```vue
 <i-button-group>
+  <i-button>上一页</i-button>
   <i-button>默认按钮</i-button>
-  <i-button>默认按钮</i-button>
-  <i-button>默认按钮</i-button>
+  <i-button>下一页</i-button>
 </i-button-group>
 ```

@@ -1,26 +1,25 @@
 <template>
   <transition name="slide">
-    <div class="sider" v-if="visible">
+    <div class="sider-wrapper" v-if="visible">
       <slot></slot>
-      <button @click="visible=false">close</button>
+      <!-- <button @click="visible=false">close</button> -->
     </div>
   </transition>
 </template>
 
 <script>
 export default {
-    name: 'PandaSider',
-    data (){
-        return {
-            visible: true
-        }
-    },
-    methods: {}
+  name: 'PandaSider',
+  data (){
+    return {
+      visible: true
+    }
+  },
 }
 </script>
 
 <style lang="scss" scoped>
-   .sider {
+   .sider-wrapper {
      position: relative;
      > button {
         position: absolute;

@@ -7,7 +7,7 @@ module.exports = {
         nav: [
             {text: '主页', link: '/'},
             {text: '文档', link: '/install/'},
-            {text: 'GitHub', link: 'https://github.com/wh2887/pandaUI-demo'},
+            {text: 'GitHub', link: 'https://github.com/shawnjonchan/pandaUI-demo'},
         ],
         sidebar: [
             {
