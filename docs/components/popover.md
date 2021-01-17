@@ -1,7 +1,7 @@
 ---
-title: 'Popover - 弹出层'
+title: 'Popover - 气泡卡片'
 ---
-# 弹出层
+# 气泡卡片
 ## 预览
 &nbsp;
 <ClientOnly>
@@ -12,17 +12,29 @@ title: 'Popover - 弹出层'
 ```vue
 <template>
   <div class="popover-wrapper">
+    <i-popover position="top">
+      <template slot="content">
+        在 button 上方显示内容
+      </template>
+      <i-button>上方显示内容</i-button>
+    </i-popover>
     <i-popover position="bottom">
       <template slot="content">
-        popover 中的内容
+        在 button 下方显示内容
       </template>
       <i-button>下方显示内容</i-button>
     </i-popover>
-    <i-popover>
+     <i-popover position="left">
       <template slot="content">
-        popover 中的内容
+        在 button 左方显示内容
       </template>
-      <i-button>点击显示</i-button>
+      <i-button>左方显示内容</i-button>
+    </i-popover>
+     <i-popover position="right">
+      <template slot="content">
+        在 button 右方显示内容
+      </template>
+      <i-button>右方显示内容</i-button>
     </i-popover>
     <i-popover trigger="hover">
       <template slot="content">
