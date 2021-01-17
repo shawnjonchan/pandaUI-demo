@@ -19,7 +19,7 @@ export default {
     props: {
         autoClose:{
             type: [Boolean,Number],
-            default: 5,
+            default: 3,
             validator(value){
               if(value === false || typeof value === 'number'){
                   return true

@@ -1,6 +1,8 @@
 # pandaUI - 一个 Vue UI 组件
 
-[![Build Status](https://travis-ci.org/shawnjonchan/pandaUI-demo.svg?branch=main)](https://travis-ci.org/shawnjonchan/pandaUI-demo)
+[![Build Status](https://travis-ci.org/shawnjonchan/pandaUI-demo.svg?branch=main)](https://travis-ci.org/shawnjonchan/pandaUI-demo) 
+
+作者： ShawnJonChan  
 
 ## 介绍
 
@@ -34,21 +36,42 @@
 
   IE 15 及以上浏览器都支持此样式。
 
-2. 安装 pandaui
+2. 安装 panda-ui
    ```
    npm i -s shawnjon-test-1
    ```
-3.引入 pandaui
+3.引入 panda-ui
   ```
-  import {Button, ButtonGroup, Icon } from "shawnjon-test-1"
-  import "shawnjon-test-1/dist/index.css";
-  export default {
-    name: "App",
-    components: {
-      "g-button": Button,
-      "g-icon":Icon
-    },
-  };
+  import {Button, ButtonGroup, Icon,Col, Collapse, CollapseItem, Content, Footer, Header, Input, Layout, Popover
+             , Row, Sider, Tabs, TabsHead, TabsBody, TabsItem, TabsPane, Toast,plugin
+           } from 'init-ui'
+    import 'init-ui/dist/index.css'    
+    import Vue from 'vue'
+    Vue.use(plugin)
+    
+    export default {
+      name: 'app',
+      components: {
+            'i-button':Button,
+            'i-icon':Icon,
+            'i-button-group':ButtonGroup,
+            'i-col':Col,
+            'i-collapse':Collapse,
+            'i-collapse-item':CollapseItem,
+            'i-content': Content,
+            'i-footer': Footer,
+            'i-header': Header,
+            'i-input': Input,
+            'i-layout': Layout,
+            'i-popover': Popover,
+            'i-row': Row,
+            'i-sider': Sider,
+            'i-tabs': Tabs,
+            'i-tabs-head': TabsHead,
+            'i-tabs-body': TabsBody,
+            'i-tabs-item': TabsItem,
+            'i-tabs-pane': TabsPane,
+            'i-toast': Toast,
   ```
 4.引入 svg symbols
 ```
@@ -56,9 +79,9 @@
 ```
 
 ## 文档
-
+[Panda UI 官网](https://shawnjonchan.github.io/pandaUi-demo/)
 ## 提问
-
+[issues](https://github.com/shawnjonchan/init-ui/issues)
 ## 变更记录
 
 ## 联系方式
