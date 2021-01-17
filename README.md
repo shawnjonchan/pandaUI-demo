@@ -45,7 +45,7 @@
   import {Button, ButtonGroup, Icon,Col, Collapse, CollapseItem, Content, Footer, Header, Input, Layout, Popover
              , Row, Sider, Tabs, TabsHead, TabsBody, TabsItem, TabsPane, Toast,plugin
            } from 'init-ui'
-    import 'init-ui/dist/index.css'    
+    import 'panda-ui/dist/index.css'    
     import Vue from 'vue'
     Vue.use(plugin)
     
@@ -79,7 +79,7 @@
 ```
 
 ## 文档
-[Panda UI 官网](https://shawnjonchan.github.io/pandaUi-demo/)
+[panda UI 官网](https://shawnjonchan.github.io/pandaUI-demo/)
 ## 提问
 [issues](https://github.com/shawnjonchan/init-ui/issues)
 ## 变更记录
